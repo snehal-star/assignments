@@ -1,0 +1,209 @@
+.hero_slider {
+    background-image: url("../images/hero_slider.png");
+    filter: grayscale(60%);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    
+}
+
+
+.hero_slider__wrapper .center_heading{position: absolute;  top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.hero_slider__wrapper .center_heading > p{color: white; background-color: #4d4d4d; text-align: center; font-size: larger; padding:14px }
+.hero_slider__wrapper .center_heading > p span{  text-align: center; }
+
+@media only screen and (max-width: 767px){
+    .hero_slider__wrapper .center_heading{ display: none;}
+
+}
+
+#brand_name{ color: white; 
+    /* / margin-right: 600px; / */
+}
+
+#brand_name > span{ color: #00BFFF;}
+
+.hero_slider__wrapper  {background: rgba(0,0,0,0.6);}
+.hero_silder_nav{ padding: 0 8% 0 8%;}
+.hero_slider__wrapper .hero_silder_nav >nav #collapsibleNavbar{justify-content: flex-end;}
+.hero_slider__wrapper .hero_silder_nav >nav  ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+    /* / margin-left: 50px;   / */
+}
+ 
+.hero_slider__wrapper .hero_silder_nav > nav ul li { 
+    float: right;
+}
+
+.hero_slider__wrapper .hero_silder_nav > nav ul li a{ 
+    display: inline-block; 
+    padding: 12px 12px;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.hero_slider__wrapper .hero_silder_nav> nav ul li a:hover{border: 2px solid #00BFFF; color: #00BFFF;}
+
+/* / hero slider end / */
+
+
+/*services start*/
+.services{
+    background-color: aqua;
+}
+.services_wrapper_title h3{
+    padding-top:7%;
+}
+.services_wrapper_contents{
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding-top:20px;
+    padding-bottom:30px
+}
+/* services end */
+
+/* portfolio start */
+.portfolio_wrapper .flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio_wrapper img{
+    width:242px;
+    margin:10px;
+}
+.portfolio_wrapper img:hover{
+    opacity:0.6;
+} 
+
+/* end */
+
+/* start portfolio */
+.portfolio_wrapper_heading .flex-container{
+    display: flex;
+    justify-content: flex-start;
+}
+.portfolio_wrapper_heading ul{
+    list-style-type:none; 
+    display: inline-flex;
+    padding-left: 350px;
+    
+}
+.portfolio_wrapper_heading li{
+    padding:10px;
+}
+
+.overlay{
+    opacity: 0;
+  transition: .3s ease;
+  background-color: black
+}
+/* end portfolio */
+.just_default_section_wrapper{
+    color:black;
+}
+.just_default_section{
+    background-color:gray;
+    padding:5% 0;
+}
+.just_default_section_wrapper button{
+    padding:1% 4%;
+    border:1px solid black;
+     background-color:gray
+}
+/* end .just_default_section */
+/* start twitter */
+.twitter_section{
+    background-color: rgb(0, 247, 255);
+
+}
+.twitter_title > p{
+    font-size: 20px;
+    color:white;
+   
+}
+.twitter_wrapper{
+    padding-top:3%;
+    padding-bottom:3%;
+}
+/* end .twitter_section */
+/* start who is john deo */
+.bg{height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+.who_is_john_doe{
+    padding-top:3%;
+    padding-bottom:3%;
+    background-image: url('../images/holder.png');
+    background-size:cover;
+    color:white
+
+}
+.who_is_john_doe_wrapper .grid-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-row-gap:20%;
+    grid-column-gap:10%;
+
+}
+.who_is_john_doe .fab{
+    border:1px solid white;
+    padding:2%;
+}
+/* end .who_is_john_doe */
+/* start .testimonials_wrapper */
+.testimonials_wrapper{
+    padding-top:10%;
+    padding-bottom:5%;
+    color:black;
+    font-size: 18px;
+}
+address{
+    color:skyblue
+}
+/* end .testimonials_wrapper
+ */
+ /* start .contact */
+ 
+.contact{
+    background-image: url('../images/bg-holder.png');
+}
+.contact_wrapper{
+    padding-top: 90px;
+}
+.contact_wrapper{
+    padding-bottom:50px
+}
+.contact_wrapper input{
+    width:290px;;
+    height: 40px
+}
+.contact_wrapper button{
+    background-color: cyan;
+    padding-left:5%;
+    padding-right:5%;
+    height:40px;
+    width:290px;
+    border:0;
+    color:white;
+    
+}
+@media only screen and (max-width: 600px) {
+    .contact_info{
+display:none    }
+  }
+
+.footer{
+    background-color: rgba(17, 12, 12, 0.788);
+    padding-top:3%;
+    padding-bottom:3%
+}
+/* end .contact */
