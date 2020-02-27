@@ -22,7 +22,7 @@
 <!-- bxSlider Javascript file -->
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
-
+<script src="scripting.js"></script>
 <!-- bxSlider CSS file -->
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
 <!-- Responsive -->
@@ -131,17 +131,20 @@
 					<li class="fileds">
 						<div class="name_fileds">
 							<label>First Name</label>
-							<input name="firstname" type="text"/> 
+							<input name="firstname" type="text" onkeyup="return checkFirstName()"/> 
+							<span id="fname" style="visibility : hidden;">erroe</span>
 						</div>
 						<div class="name_fileds">
 							<label>Last Name</label>
-							<input name="lastname" type="text" /> 
+							<input name="lastname" type="text" onblur="return checkLastname()"/> 
+							<span id="lname" style="visibility : hidden;">error</span>
 						</div>
 					</li>
 					<li class="fileds">
 						<div class="phone_fileds">
 							<label>Phone No</label>
-							<input name="phone" type="text" /> 
+							<input name="phone" type="text" onblur="return checkPhoneNo()"/> 
+							<span id="phone_error" style="visibility : hidden;">error</span>
 						</div>
 						<div class="phone_fileds">
 							<label>Office No</label>
@@ -441,7 +444,7 @@ Live a life without regrets and take action today!</p>
    Sticky Contact Number End-->
 
 </div>
-<script src="scripting.js">
+
 </script>
 <script type="text/javascript">
 	$(document).ready(function(){
